@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Grilli - Alta Cucina</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food" />
+    <meta
+      name="description"
+      content="This is a Restaurant html template made by Starnino Silvano"
+    />
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+
+  <body id="top">
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">Grilli</p>
+    </div>
+
+    <div class="topbar">
+      <div class="container">
+        <address class="topbar-item">
+          <div class="icon">
+            <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">
+            Roma, Via Condotti 15
+          </span>
+        </address>
+
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Dalle 8:00 alle 22:00</span>
+        </div>
+
+        <a href="tel:+39 3882449494" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">+39 388 244 9494</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:booking@restaurant.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">grilli.restaurant@gmail.com</span>
+        </a>
+      </div>
+    </div>
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.svg"
+            width="160"
+            height="50"
+            alt="Grilli - Home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/logo.svg"
+              width="160"
+              height="50"
+              alt="Grilli - Home"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline active">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#menu" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menù</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Chi siamo</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">I nostri chef</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contattaci</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="text-center">
+            <p class="headline-1 navbar-title">Visitaci</p>
+
+            <address class="body-4">
+              Grilli <br />
+              Roma, Via Condotti 15, IT
+            </address>
+
+            <p class="body-4 navbar-text">Dalle 9:30 alle 14:00</p>
+
+            <a href="mailto:booking@grilli.com" class="body-4 sidebar-link"
+              >booking@grilli.com</a
+            >
+
+            <div class="separator"></div>
+
+            <p class="contact-label">Prenotazione</p>
+
+            <a
+              href="tel:+39-163-987-1537"
+              class="body-1 contact-number hover-underline"
+            >
+            +39-388-244-9494
+            </a>
+          </div>
+        </nav>
+
+        <a href="#" class="btn btn-secondary">
+          <span class="text text-1">Prenota un tavolo</span>
+
+          <span class="text text-2" aria-hidden="true">Prenota un tavolo</span>
+        </a>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-1.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Tradizioni
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                L'amore per il  <br />
+                cibo delizioso
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Vieni da noi e prova la gioia di un pasto appetitoso
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Osserva i nostri menù</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >Osserva i nostri menù</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-2.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+               esperienza fantastica
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Sapori ispirati <br />
+                alle stagioni
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Vieni da noi e prova la gioia di un pasto appetitoso
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Osserva i nostri men</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >Osserva i nostri men</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/hero-slider-3.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                Spettacolare e delizioso
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Dove ogni sapore <br />
+                racconta una storia
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Vieni da noi e prova la gioia di un pasto appetitoso
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">Osserva i nostri men</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >Osserva i nostri men</span
+                >
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn
+          >
+            <ion-icon name="chevron-back"></ion-icon>
+          </button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn
+          >
+            <ion-icon name="chevron-forward"></ion-icon>
+          </button>
+
+          <a href="#" class="hero-btn has-after">
+            <img
+              src="./assets/images/hero-icon.png"
+              width="48"
+              height="48"
+              alt="booking icon"
+            />
+
+            <span class="label-2 text-center span">Prenota un tavolo</span>
+          </a>
+        </section>
+
+        <section
+          class="section service bg-black-10 text-center"
+          aria-label="service"
+        >
+          <div class="container">
+            <p class="section-subtitle label-2">Sapori incredibili</p>
+
+            <h2 class="headline-1 section-title">Offriamo la qualità migliore
+            </h2>
+
+            <p class="section-text">
+              Cerchiamo sempre di garantire il miglior servizio
+              ai nostri clienti e metterli a proprio agio.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/service-1.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Colazione</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >Osserva il menù</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/service-2.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Appetizers"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Antipasti</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >Osserva il menù</a
+                    >
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/service-3.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Drinks"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Bevande</a>
+                    </h3>
+
+                    <a href="#" class="btn-text hover-underline label-2"
+                      >Osserva il menù</a
+                    >
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-1.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1 move-anim"
+            />
+            <img
+              src="./assets/images/shape-2.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+          </div>
+        </section>
+
+        <section
+          class="section about text-center"
+          aria-labelledby="about-label"
+          id="about"
+        >
+          <div class="container">
+            <div class="about-content">
+              <p class="label-2 section-subtitle" id="about-label">La nostra storia</p>
+
+              <h2 class="headline-1 section-title">
+               Ogni piatto racconta una storia
+              </h2>
+
+              <p class="section-text">
+                Utilizziamo prodotti di altissima qualità per 
+                permettere ai nostri chef di realizzare pasti
+                speciali e ricercati.
+                
+              </p>
+
+              <div class="contact-label">Prenota al nostro numero</div>
+
+              <a
+                href="tel:+804001234567"
+                class="body-1 contact-number hover-underline"
+                >+39 388 244 9494</a
+              >
+
+              <a href="#" class="btn btn-primary">
+                <span class="text text-1">Scopri di più</span>
+
+                <span class="text text-2" aria-hidden="true">Scopri di più</span>
+              </a>
+            </div>
+
+            <figure class="about-banner">
+              <img
+                src="./assets/images/about-banner.jpg"
+                width="570"
+                height="570"
+                loading="lazy"
+                alt="about banner"
+                class="w-100"
+                data-parallax-item
+                data-parallax-speed="1"
+              />
+
+              <div
+                class="abs-img abs-img-1 has-before"
+                data-parallax-item
+                data-parallax-speed="1.75"
+              >
+                <img
+                  src="./assets/images/about-abs-image.jpg"
+                  width="285"
+                  height="285"
+                  loading="lazy"
+                  alt=""
+                  class="w-100"
+                />
+              </div>
+
+              <div class="abs-img abs-img-2 has-before">
+                <img
+                  src="./assets/images/badge-2.png"
+                  width="133"
+                  height="134"
+                  loading="lazy"
+                  alt=""
+                />
+              </div>
+            </figure>
+
+            <img
+              src="./assets/images/shape-3.png"
+              width="197"
+              height="194"
+              loading="lazy"
+              alt=""
+              class="shape"
+            />
+          </div>
+        </section>
+
+        <section class="special-dish text-center" aria-labelledby="dish-label">
+          <div class="special-dish-banner">
+            <img
+              src="./assets/images/special-dish-banner.jpg"
+              width="940"
+              height="900"
+              loading="lazy"
+              alt="special dish"
+              class="img-cover"
+            />
+          </div>
+
+          <div class="special-dish-content bg-black-10">
+            <div class="container">
+              <img
+                src="./assets/images/badge-1.png"
+                width="28"
+                height="41"
+                loading="lazy"
+                alt="badge"
+                class="abs-img"
+              />
+
+              <p class="section-subtitle label-2">Piatto del giorno</p>
+
+              <h2 class="headline-1 section-title">Pepite di aragosta</h2>
+
+              <p class="section-text">
+                Aragoste fresche dalle coste 
+                del Mediterraneo.
+              </p>
+
+              <div class="wrapper">
+                
+
+                <span class="span body-1">€19.99</span>
+              </div>
+
+              <a href="#" class="btn btn-primary">
+                <span class="text text-1">Osserva i menù</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >Osserva i menù</span
+                >
+              </a>
+            </div>
+          </div>
+
+          <img
+            src="./assets/images/shape-4.png"
+            width="179"
+            height="359"
+            loading="lazy"
+            alt=""
+            class="shape shape-1"
+          />
+
+          <img
+            src="./assets/images/shape-9.png"
+            width="351"
+            height="462"
+            loading="lazy"
+            alt=""
+            class="shape shape-2"
+          />
+        </section>
+
+        <section class="section menu" aria-label="menu-label" id="menu">
+          <div class="container">
+            <p class="section-subtitle text-center label-2">
+             Le nostre scelte
+            </p>
+
+            <h2 class="headline-1 section-title text-center">Menù delizie</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-1.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Greek Salad"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Insalata greca</a>
+                      </h3>
+
+                      <span class="badge label-1">Stagionale</span>
+
+                      <span class="span title-2">€9,99</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Pomodori, feta, cipolle rosse, olive nere
+                      cipollotto, cetrioli, origano,pepe nero, sale,
+                      olio extravergine d'oliva, aceto di vino bianco
+                      e foglie di cappero in salamoia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-2.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tonkotsu Ramen"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tonkotsu Ramen</a>
+                      </h3>
+
+                      <span class="span title-2">€14,99</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Spaghetti di grano in brodo di maiale con 
+                      pancetta, uova, alga kombu e cipollotto fresco.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-3.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Butternut Pumpkin"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Chicken Tikka Masala</a>
+                      </h3>
+
+                      <span class="span title-2">€14,99</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Petto di pollo, yogurt greco, aglio, 
+                      Garam Masala, Sale fino, Zenzero fresco,
+                      paprika affumicata e succo di lime.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-4.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Tokusen Wagyu"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Zuppa di Miso</a>
+                      </h3>
+
+                      <span class="badge label-1">Nuovo</span>
+
+                      <span class="span title-2">€11.99</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                     Acqua, carote, Daikon, Porri, Tofu,
+                     Miso, Zenzero fresco, Alga wakame, sale e 
+                     olio extravergine d'oliva.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-5.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Olivas Rellenas"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Tartare di granchio e avocado</a>
+                      </h3>
+
+                      <span class="span title-2">€14.99</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                      Polpa di granchio, cipolla rossa, filetto di 
+                      acciuga all'olio di oliva, avocado, capperi, 
+                      succo di limone e prezzemolo.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="menu-card hover:card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 100; --height: 100"
+                  >
+                    <img
+                      src="./assets/images/menu-6.png"
+                      width="100"
+                      height="100"
+                      loading="lazy"
+                      alt="Opu Fish"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div>
+                    <div class="title-wrapper">
+                      <h3 class="title-3">
+                        <a href="#" class="card-title">Fritto misto</a>
+                      </h3>
+
+                      <span class="span title-2">€16.99</span>
+                    </div>
+
+                    <p class="card-text label-1">
+                     Gamberetti rossi, triglie, cepole, 
+                     semola, acciughe, merluzzetti, calamari e 
+                     sale fino.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <p class="menu-text text-center">
+              Durante l'inverno dalle <span class="span">19:00</span> alle
+              <span class="span">22:30</span>
+            </p>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Osserva i menù</span>
+
+              <span class="text text-2" aria-hidden="true">Osserva i menù</span>
+            </a>
+
+            <img
+              src="./assets/images/shape-5.png"
+              width="921"
+              height="1036"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+            <img
+              src="./assets/images/shape-6.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-3 move-anim"
+            />
+          </div>
+        </section>
+
+        <section
+          class="section testi text-center has-bg-image"
+          style="background-image: url('./assets/images/testimonial-bg.jpg')"
+          aria-label="testimonials"
+        >
+          <div class="container">
+            <div class="quote">”</div>
+
+            <p class="headline-2 testi-text">
+              Location magnifica, i camerieri sono stati 
+              cortesi e professionali, il menù offre una
+              buona varietà di piatti e il rapporto 
+              qualità-prezzo è ottimo.
+            </p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+
+            <div class="profile">
+              <img
+                src="./assets/images/testi-avatar.jpg"
+                width="100"
+                height="100"
+                loading="lazy"
+                alt="Sam Jhonson"
+                class="img"
+              />
+
+              <p class="label-2 profile-name">Luciano Monosilio</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="reservation">
+          <div class="container">
+            <div class="form reservation-form bg-black-10">
+              <form action="" class="form-left">
+                <h2 class="headline-1 text-center">Prenotazione Online</h2>
+
+                <p class="form-text text-center">
+                  Richiesta di prenotazione
+                  <a href="tel:+39-163-987-1537" class="link">+39-388-244-9494</a>
+                  compila il modulo d'ordine
+                </p>
+
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Il tuo nome"
+                    autocomplete="off"
+                    class="input-field"
+                    id="Name_table"
+                  />
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Numero di telefono"
+                    autocomplete="off"
+                    class="input-field"
+                    id="Phone_table"
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="person-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <select name="person" class="input-field" id="Person_table">
+                      <option value="1">1-Persona</option>
+                      <option value="2">2-Persone</option>
+                      <option value="3">3-Persone</option>
+                      <option value="4">4-Persone</option>
+                      <option value="5">5-Persone</option>
+                      <option value="6">6-Persone</option>
+                      <option value="7">7+ Persone</option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="calendar-clear-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <input
+                      type="date"
+                      name="reservation-date"
+                      class="input-field"
+                      id="Day_table"
+                    />
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon-wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <select name="person" class="input-field" id="Book_time">
+                      <option value="08:00am">08 : 00 </option>
+                      <option value="09:00am">09 : 00 </option>
+                      <option value="010:00am">10 : 00 </option>
+                      <option value="011:00am">11 : 00 </option>
+                      <option value="012:00am">12 : 00 </option>
+                      <option value="01:00pm">13 : 00 </option>
+                      <option value="02:00pm">14 : 00 </option>
+                      <option value="03:00pm">15 : 00 </option>
+                      <option value="04:00pm">16 : 00 </option>
+                      <option value="05:00pm">17 : 00 </option>
+                      <option value="06:00pm">18 : 00 </option>
+                      <option value="07:00pm">19 : 00 </option>
+                      <option value="08:00pm">20 : 00 </option>
+                      <option value="09:00pm">21 : 00 </option>
+                      <option value="10:00pm">22 : 00 </option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  autocomplete="off"
+                  class="input-field"
+                  id="Message_table"
+                ></textarea>
+
+                <button type="button" class="btn btn-secondary" onclick="prenotazione()">
+                  <span class="text text-1">Prenota un tavolo</span>
+
+                  <span class="text text-2" aria-hidden="true"
+                    >Prenota un tavolo</span
+                  >
+                </button>
+              </form>
+
+              <div
+                class="form-right text-center"
+                style="
+                  background-image: url('./assets/images/form-pattern.png');
+                "
+              >
+                <h2 class="headline-1 text-center">Contattaci</h2>
+
+                <p class="contact-label">Prenotazione</p>
+
+                <a
+                  href="tel:+39-163-987-1537"
+                  class="body-1 contact-number hover-underline"
+                  >+39-388-244-9494</a
+                >
+
+                <div class="separator"></div>
+
+                <p class="contact-label">Location</p>
+
+                <address class="body-4">
+                  Grilli <br />
+                  Roma, Via Condotti 15, IT
+                </address>
+
+                <p class="contact-label">Pranzo</p>
+
+                <p class="body-4">
+                 Da Lunedì a Domenica <br />
+                 dalle 11:00 alle 14:30
+                </p>
+
+                <p class="contact-label">Cena</p>
+
+                <p class="body-4">
+                  Da Lunedì a Domenica <br />
+                  dalle 19:00 alle 22:30
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        >
+
+        <section class="section features text-center" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle label-2">Perchè venire da noi</p>
+
+            <h2 class="headline-1 section-title">I nostri punti forti</h2>
+
+            <ul class="grid-list">
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-1.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Cibo delizioso</h3>
+
+                  <p class="label-1 card-text">
+                   Cibo di alta qualità e ricercato.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-2.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Sostenibilità ambientale</h3>
+
+                  <p class="label-1 card-text">
+                    Non buttiamo gli scarti dei pasti e sosteniamo l'ambiente.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-3.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Chef esperti</h3>
+
+                  <p class="label-1 card-text">
+                    Chef con molta esperienza nel campo.
+                  </p>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-4.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Feste e Party</h3>
+
+                  <p class="label-1 card-text">
+                    Si può prenotare anche per feste o compleanni.
+                  </p>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-7.png"
+              width="208"
+              height="178"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1"
+            />
+
+            <img
+              src="./assets/images/shape-8.png"
+              width="120"
+              height="115"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2"
+            />
+          </div>
+        </section>
+
+        <section class="section event bg-black-10" aria-label="event">
+          <div class="container">
+            <p class="section-subtitle label-2 text-center">Novità recenti</p>
+
+            <h2 class="section-title headline-1 text-center">Prossimi eventi</h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/event-1.jpg"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Flavour so good you’ll try to eat with your eyes."
+                      class="img-cover"
+                    />
+
+                    <time class="publish-date label-2" datetime="2023-09-15"
+                      >15/09/2024</time
+                    >
+                  </div>
+
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">
+                      Cibo e sapori
+                    </p>
+
+                    <h3 class="card-title title-2 text-center">
+                     Nel nostro ristorante si mangia prima con gli occhi.
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/event-2.jpg"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Flavour so good you’ll try to eat with your eyes."
+                      class="img-cover"
+                    />
+
+                    <time class="publish-date label-2" datetime="2022-09-08"
+                      >08/12/2024</time
+                    >
+                  </div>
+
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">
+                      Cibo di qualità
+                    </p>
+
+                    <h3 class="card-title title-2 text-center">
+                      Nel nostro ristorante si mangia prima con gli occhi.
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="event-card has-before hover:shine">
+                  <div
+                    class="card-banner img-holder"
+                    style="--width: 350; --height: 450"
+                  >
+                    <img
+                      src="./assets/images/event-3.jpg"
+                      width="350"
+                      height="450"
+                      loading="lazy"
+                      alt="Flavour so good you’ll try to eat with your eyes."
+                      class="img-cover"
+                    />
+
+                    <time class="publish-date label-2" datetime="2022-09-03"
+                      >03/10/2024</time
+                    >
+                  </div>
+
+                  <div class="card-content">
+                    <p class="card-subtitle label-2 text-center">Ricette</p>
+
+                    <h3 class="card-title title-2 text-center">
+                      Nel nostro ristorante si mangia prima con gli occhi.
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Visualizza il nostro blog</span>
+
+              <span class="text text-2" aria-hidden="true">Visualizza il nostro blog</span>
+            </a>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer
+      class="footer section has-bg-image text-center"
+      style="background-image: url('./assets/images/footer-bg.jpg')"
+    >
+      <div class="container">
+        <div class="footer-top grid-list">
+          <div class="footer-brand has-before has-after">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="160"
+                height="50"
+                loading="lazy"
+                alt="grilli home"
+              />
+            </a>
+
+            <address class="body-4">
+              Grilli  Roma, Via Condotti 15, IT
+            </address>
+
+            <a href="mailto:booking@grilli.com" class="body-4 contact-link"
+              >grilli.restaurant@gmail.com</a
+            >
+
+            <a href="tel:+39-163-987-1537" class="body-4 contact-link"
+              >Richiesta di prenotazione :+39-388-244-9494</a
+            >
+
+            <p class="body-4">Aperti dalle 9:00 alle 22:30</p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+
+            <p class="title-1">Get News & Offers</p>
+
+            <p class="label-1">
+              Subscribe us & Get <span class="span">25% Off.</span>
+            </p>
+
+            <form action="" class="input-wrapper">
+              <div class="icon-wrapper">
+                <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+                <input
+                  type="email"
+                  name="email_address"
+                  placeholder="Your email"
+                  autocomplete="off"
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Iscriviti</span>
+
+                <span class="text text-2" aria-hidden="true">Iscriviti</span>
+              </button>
+            </form>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline">Menù</a>
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Chi siamo</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >I nostri chef</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Contattaci</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Facebook</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Instagram</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >X(Twitter)</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Youtube</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="label-2 footer-link hover-underline"
+                >Google Maps</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Grilli. All Rights Reserved | Crafted by
+            <a
+              
+              >Starnino Silvano</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <script src="script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
